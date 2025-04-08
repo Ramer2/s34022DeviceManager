@@ -2,8 +2,16 @@
 
 namespace DeviceManager.parsers;
 
+/// <summary>
+/// Parses data to create an instance of SmartWatch class.
+/// </summary>
 public class SmartWatchParser : IDeviceParser
 {
+    /// <summary>
+    /// Parses a string array into a SmartWatch instance.
+    /// </summary>
+    /// <param name="parts">The array containing device data.</param>
+    /// <returns>A parsed SmartWatch instance, or null if parsing fails.</returns>
     public Device? Parse(string[] parts)
     {
         if (parts.Length < 4) return null;

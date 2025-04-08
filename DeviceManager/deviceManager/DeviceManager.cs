@@ -1,4 +1,5 @@
 ﻿using DeviceManager.devices;
+using DeviceManager.parsers;
 
 namespace DeviceManager.deviceManager;
 
